@@ -1,0 +1,84 @@
+:root{
+    --main-color:#6F8B9C;
+    --border-raduis:5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body{
+    width: 95%;
+    height: 91vh;
+    margin: auto;
+}
+
+.header{
+    background-color: var(--main-color);
+    border-radius: var(--border-raduis);
+    padding: 5px;
+}
+
+.parentContianer{
+    border-radius: var(--border-raduis);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+form {
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .gender{
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form input[type="radio"]{
+    margin: 0px 10px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}

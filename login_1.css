@@ -1,0 +1,199 @@
+:root{
+    --main-color:#6F8B9C;
+    --border-raduis:5px;
+    --card-color: #f9f9f9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 95%;
+    height: 91vh;
+    margin: auto;
+}
+
+.header{
+    background-color: var(--main-color);
+    border-radius: var(--border-raduis);
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    body{
+        width: 95%;
+    }
+
+    a img{
+        width: 150px;
+    }
+}
+
+.parentContianer{
+    border-radius: var(--border-raduis);
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.childContainer{
+    width: 625px;
+    height: 375px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--border-raduis);
+    background-color: var(--card-color);
+    box-shadow: 20px 20px 5px #c7c7c7;
+}
+@media (max-width: 768px) {
+    .childContainer{
+        width: 90%;
+        box-shadow: 5px 5px 5px #c7c7c7;
+        
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left form{
+        width: 200px;
+        height: 65%;
+    }
+
+
+}
+
+.right{
+    width: 50%;
+    position: relative;
+    border-radius: var(--border-raduis);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+}
+
+.right .img{
+    width: 50%;
+    height: 40%;
+    background-image: url('image/login.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-raduis);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.left .formUser{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .formAdmin{
+    height: 60%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #506473;
+}
+
+.left input[type='email'],
+.left input[type='text'],
+.left input[type='password']{
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    font-size: 1rem;
+    background-color: var(--card-color);
+}
+
+.left input[type='email']:focus,
+.left input[type='text']:focus,
+.left input[type='password']:focus{
+    outline: none; 
+    background-color: var(--card-color);
+}
+
+.left input[type='submit']{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--card-color);
+    padding: 5px 0;
+    background: linear-gradient(to left, var(--main-color), #29333C);
+}
+
+#adminBtn{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    margin: 15px;
+    padding: 10px;
+    padding-bottom: 0px;
+    color: var(--main-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+#adminBtn:hover{
+    color: #29333C;
+    border-bottom: 2px solid #29333C;
+}
+
+.right::after{
+    content: "";
+    width: 375px;
+    height: 375px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(180px);
+    z-index: 1;
+}
+
+
+.error-message {
+    color: red;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin: -50px auto;
+    border-radius: 5px;
+    text-align: center;
+    width: 625px;
+}
+
+@media (max-width: 768px) {
+    .error-message{
+        width: 90%;
+        margin: -75px auto;
+    }
+}

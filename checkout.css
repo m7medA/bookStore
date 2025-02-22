@@ -1,0 +1,97 @@
+:root{
+    --main-color:#6F8B9C;
+    --border-raduis:5px;
+    --card-color: #f9f9f9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+}
+
+header {
+	background-color: rgb(0,51,102);
+	width: 100%;
+}
+header img {
+	margin: 1%;
+}
+header .hi{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #000;
+    margin-top: 15%;
+}
+header .hi:hover{
+    background-color: #ccc;
+}
+form{
+	margin-top: 1%;
+	float: left;
+	width: 40%;
+	color: #000;
+}
+input[type=text] {
+	padding: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 2px solid rgb(0,51,102);
+}
+textarea {
+	outline: none;
+	border: 2px solid #ccc;
+}
+textarea:focus {
+	border: 2px solid rgb(0,51,102);
+}
+.button{
+    background-color: rgb(0,51,102);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #fff;
+}
+.button:hover {
+    background-color: rgb(102,255,255);
+    color: #000;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    float: right;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr{background-color: #fff;}
+
+th {
+    background-color: rgb(0,51,102);
+    color: white;
+}
+.container {
+	width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0 auto;
+}
